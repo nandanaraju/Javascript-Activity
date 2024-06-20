@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="movie">
+
+    </div>
+    <script>
+        let a=document.createElement("ul");
+        a.id="list";
+        document.getElementById("movie").appendChild(a);
+
+        let b=document.createElement("li");
+        b.innerHTML="Spiderman";
+        document.getElementById("list").appendChild(b);
+
+        let c=document.createElement("li");
+        c.innerHTML="Harry Potter";
+        document.getElementById("list").appendChild(c);
+
+        let d=document.createElement("li");
+        d.innerHTML="The Shawshank Redemption";
+        document.getElementById("list").appendChild(d);
+
+        let e=document.createElement("li");
+        e.innerHTML="The Godfather";
+        document.getElementById("list").appendChild(e);
+
+        let f=document.createElement("li");
+        f.innerHTML="The Dark Knight";
+        document.getElementById("list").appendChild(f);
+
+    </script>
+</body>
+</html>

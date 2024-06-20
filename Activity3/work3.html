@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="down">
+
+    </div>
+    <script>
+        let A=document.createElement("select");
+        A.id="drop";
+        document.getElementById("down").appendChild(A);
+
+        let B=document.createElement("option");
+        B.innerHTML="Javascript";
+        document.getElementById("drop").appendChild(B);
+
+        let C=document.createElement("option");
+        C.innerHTML="C";
+        document.getElementById("drop").appendChild(C);
+
+        let D=document.createElement("option");
+        D.innerHTML="C++";
+        document.getElementById("drop").appendChild(D);
+
+        let E=document.createElement("option");
+        E.innerHTML="Python";
+        document.getElementById("drop").appendChild(E);
+
+        let F=document.createElement("option");
+        F.innerHTML="SQL";
+        document.getElementById("drop").appendChild(F);
+    </script>
+</body>
+</html>

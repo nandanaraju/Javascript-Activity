@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>My name is <span id="name"></span>.I live in <span id="place">.</span></p>
+    <script>
+        let fname = "nandana ", lname = "v", place = "kollam"
+        document.getElementById("name").innerHTML = (fname + lname).toUpperCase()
+        document.getElementById("place").innerHTML = place.toUpperCase()
+
+
+        let a = "MongoDB is a decentralised distributed ledger. MongoDB can eliminate centralisation."
+        let b = a.replace(/MongoDB/g, "Blockchain")
+        document.write(b, "<br>")
+        let x = a.substring(0, 46)
+        document.write(x, "<br>")
+
+        document.write("Hello World" === "hEllO World", "<br>")
+        document.write(typeof ("Hello World" === "hEllO World"), "<br>")
+
+        let c = "I like to play video games.I don't like Hide & seek"
+        let d = c.replace("like", "don't like")
+        document.write(d, "<br>")
+
+        let e= "app.json"
+        let f= e.slice(0, 3)
+        document.write(f,"<br>")
+
+        
+
+        let g,h,i;
+        g=5,h=10;
+        document.write(`Before swapping ,g=${g},h=${h}`,"<br>")
+        i=g;
+        g=h;
+        h=i;
+        document.write(`After swapping ,g=${g},h=${h}`,"<br>")
+
+        let j=30,k=40;
+        document.write(`Before swapping w/o using tem.variable ,j=${j},k=${k}`,"<br>")
+        j=j+k
+        k=j-k
+        j=j-k
+        document.write(`After swapping w/o using tem.variable ,j=${j},k=${k}`,"<br>")
+
+        let deg=40;
+        far=(deg*9/5) + 32
+        document.write(`The temperature, ${deg}C is equal to ${far}F `,"<br>")
+
+        let l=4;
+        square=l*l
+        cube=l*l*l
+        document.write(`The Square of ${l} is `,square+"<br>")
+        document.write(`The Cube  of ${l} is `,cube+"<br>")
+
+        // const pi=3.14
+        // l=20,b=12,h=15,a=5,r=8,a=3,b=6,c=10;
+        // document.write(`The Area of a square of side  ${a}m is `,(a*a)+"m^2<br>")
+        // document.write(`The Perimeter of a square of side ${a}m is `,4*a+"m<br>")
+        // document.write(` The Area of a rectangle of length ${l}m and breadth of ${b}mm is `,(l*b)+"m^2<br>")
+        // document.write(`The Perimeter of a rectangle of length ${l}m and breadth of ${b}m is `,2*(l*b)+"m<br>")
+        // document.write(` The Area of a triangle of height  ${h}m and breadth ${b}m is `,0.5*(b*h)+"m^2<br>")
+        // document.write(` The Perimeter of a triangle of sides ${a}m,${b}m and ${c}m is `,a+b+c+"m<br>")
+        // document.write(` The Area of a circle of radius ${r}m is `,pi*r*r+"m^2<br>")
+        // document.write(`The Perimeter of a circle of radius ${r}m is `,2*pi*r+"m<br>")
+
+        const pi =3.14;
+        let 
+        y= 20;
+        r= 10 ;
+        l=5;
+        w=8;
+        b=12;
+        h=4;
+        ar= y*y;
+        ac= pi*r*r;
+        ae = l*w;
+        at = (1/2)*b*h
+        p= 4*y;
+        pt = y+b+h;
+        pc = l*pi*r;
+        pr = l*(l+w)
+
+
+        document.write (" <br>The area of a square  is ", ar)
+        document.write (" <br>The area of a circle  ",ac)
+        document.write (" <br>The area of a rectangle is ",ae)
+        document.write (" <br>The area of a triangle is ",at)
+    
+        document.write (" <br>The perimeter of a square is ", p)
+        document.write (" <br>The perimeter of a triangle  is ",pt)
+        document.write (" <br>The perimeter of a circle  is ",pc)
+        document.write (" <br>The perimeter of a rectangle is ", pr )
+
+
+
+    </script>
+</body>
+
+</html>
