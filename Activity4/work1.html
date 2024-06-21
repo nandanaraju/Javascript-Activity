@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //program to print the month name by given number using switch
+
+        switch (x = 5) {
+            case 1: { document.write("January"); break }
+            case 2: { document.write("February"); break }
+            case 3: { document.write("March"); break }
+            case 4: { document.write("April"); break }
+            case 5: { document.write("May"); break }
+            case 6: { document.write("June"); break }
+            case 7: { document.write("July"); break }
+            case 8: { document.write("August"); break }
+            case 9: { document.write("September"); break }
+            case 10: { document.write("October"); break }
+            case 11: { document.write("November"); break }
+            case 12: { document.write("December"); break }
+            default: { document.write("Enter a valid value") }
+        }
+
+        //program using switch case to check the CGPA on given condition.
+
+        switch (CGPA = 8) {
+            case 8: { document.write("<br>You got 8 CGPA"); break }
+            case 10: { document.write("<br>You got 10 CGPA"); break }
+            case 7: { document.write("<br>You got 7 CGPA"); break }
+        }
+
+        //JavaScript conditional statement to find the sign of the product of three numbers. Display with the specified sign.
+
+        let product = -3 * 2 * 1;
+
+        if (product > 0) {
+            document.write("<br>The sign of the product is +");
+        } else if (product < 0) {
+            document.write("<br>The sign of the product is -");
+        } else {
+            document.write("The product is 0");
+        }
+
+        //Program to find whether the person is eligible for voting using ternary operator
+
+        let s = 10;
+        u = (s >= 18) ? "You are eligible to vote." : "You are not eligible to vote.";
+        document.write("<br>", u);
+
+        // Function to check if the given age is eligible for voting
+        let a=35;
+
+        if (a>=18) {
+            document.write("<br>You are eligible to vote")
+        }
+        else {
+            document.write("<br>You are not eligible to vote")
+        }
+
+        //program to read temperature in centigrade and display a suitable message according to the temperature
+
+        let t = 25;
+        if (t < 0) {
+            document.write("<br>Freezing weather");
+        } else if (t >= 0 && t < 10) {
+            document.write("<br>Very Cold weather");
+        } else if (t >= 10 && t < 20) {
+            document.write("<br>Cold weather");
+        } else if (t >= 20 && t < 30) {
+            document.write("<br>Normal in Temp");
+        } else if (t >= 30 && t < 40) {
+            document.write("<br>It's Hot");
+        } else if (t >= 40) {
+            document.write("<br>It's Very Hot");
+        }
+        else {
+            document.write("<br>Enter a another value")
+        }
+
+        //JavaScript program to check the given number is Leap year
+
+        let b=2025;
+        if (b % 4 === 0 && b % 100 !== 0){
+            document.write("<br> The given year is a leap year.")
+        }
+        else if ((b % 400 === 0)){
+            document.write("<br> The given year is a leap year.")
+        }
+        else{
+            document.write ("<br> The given year is not a leap year")
+        }
+
+        //program to check the given number is Positive or negative
+
+        let c = -30;
+        if (c > 0) {
+            document.write("<br> The given number is positive");
+        }
+        else if (c < 0) {
+            document.write("<br> The given number is negative");
+        }
+        else {
+            document.write("<br> The given number is 0")
+        }
+
+        //program to check from two given integers whether one of them is 8 or their sum or difference is 8.
+
+        let d = 5;
+        e = 3;
+        switch (true) {
+            case (d === 8 || e === 8):
+                document.write("<br>One of the numbers is 8.");
+                break;
+            case (d + e === 8):
+                document.write("<br>The sum of the numbers is 8.");
+                break;
+            case (Math.abs(d - e) === 8):
+                document.write("<br>The difference between the numbers is 8.");
+                break;
+            default:
+                document.write("N<br>one of the conditions are met.");
+        }
+
+        //program to compute the sum of the two given integers.
+
+        let m=35;
+        n=40;
+        o=m+n;
+        let p = (o >= 50 && o <= 80) ? 65 : 80;
+        document.write("<br>",p)
+
+        //program to check whether a given positive number is a multiple of 3 or 7.
+
+        let q=21;
+        if (q <= 0) {
+        document.write("<br>false")
+    }
+    else if (q % 3 === 0 || q % 7 === 0) {
+        document.write("<br> The given number is a multiple of 3 or 7")
+    } else {
+        document.write("<br> false")
+    }
+
+    // program to check a pair of numbers and return true if one of the numbers is 50 or if their sum is 50.
+
+    let n1=50;n2=30;
+    if(n1 == 50 ||n2 == 50){
+    document.write("<br> One of the number is 50")
+    }
+    else if (n1+n2 == 50){
+        document.write("<br> The sum of the numbers is 50")
+    }
+    else{
+        document.write("<br>false")
+    }
+
+    //program to check whether two numbers are in the range 40..60 or 70..100 inclusive
+
+    let num=50;
+    if ((num >= 40 && num <= 60) || (num >= 70 && num <= 100)) {
+        document.write("<br> True")
+    } else {
+        document.write("<br> False")
+    }
+
+    //program to calculate the root of a quadratic equation.
+
+    let a1,b1,c1,x1,k,x2,x3
+    a1=2,b1=5 ,c1=3
+    k=(b1*b1-4*a1*c1)**0.5
+    x2=(-b1+k)/(2*a1)
+    x3=(-b1-k)/(2*a1)
+    x1=(-b1)/(2*a1)
+    if (k==0) {
+        document.write("<br>the solution for x1 is ",x1,"<br>")
+    } else {
+        document.write("<br>x1 has two solutions which are ",x2," and ",x3,"<br>")
+    }
+
+
+
+        
+
+
+    </script>
+</body>
+
+</html>
