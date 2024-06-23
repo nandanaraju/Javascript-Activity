@@ -171,18 +171,22 @@
 
     //program to calculate the root of a quadratic equation.
 
-    let a1,b1,c1,x1,k,x2,x3
-    a1=2,b1=5 ,c1=3
-    k=(b1*b1-4*a1*c1)**0.5
-    x2=(-b1+k)/(2*a1)
-    x3=(-b1-k)/(2*a1)
-    x1=(-b1)/(2*a1)
-    if (k==0) {
-        document.write("<br>the solution for x1 is ",x1,"<br>")
+    let a1=1;b=-1;c=-3;
+        
+    let discriminant = b * b - 4 * a1 * c;
+    
+    if (discriminant > 0) {
+        let root1 = (-b + (discriminant)) / (2 * a1);
+        let root2 = (-b - (discriminant)) / (2 * a1);
+        document.write(`<br>The roots are real and distinct: Root 1 = ${root1}, Root 2 = ${root2}`);
+    } else if (discriminant === 0) {
+        let root = -b / (2 * a1);
+        document.write(`<br>The root is real and equal: Root = ${root}`) ;
     } else {
-        document.write("<br>x1 has two solutions which are ",x2," and ",x3,"<br>")
+        let realPart = -b / (2 * a1);
+        let imaginaryPart = (-discriminant) / (2 * a1);
+        document.write(`<br>The roots are complex: Root 1 = ${realPart} + ${imaginaryPart}i, Root 2 = ${realPart} - ${imaginaryPart}i`);
     }
-
 
 
         
