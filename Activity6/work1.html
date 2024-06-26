@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // program to copy an element in an array to another array
+
+        a1 = ["arun", 2, 10, "megha"]
+        a2 = [];
+        for (i in a1) {
+            a2.push(a1[i]);
+        }
+        document.write(a2, "<br>");
+        //program to copy an element in an array to another array in reverse order
+
+        a3 = ["abi", 2, 10, "bibi"]
+        a4 = [];
+        for (i = 3; i >= 0; i--) {
+            a4.push(a3[i]);
+        }
+        document.write(a3 + "<br>");
+        document.write(a4, "<br>");
+        //divide the array into two arrays containing half the elements
+
+        main = [20, 25, 30, 35, 40, 45, 50, 55]
+        sub1 = [];
+        sub2 = [];
+        for (i = 0; i < main.length / 2; i++) {
+            sub1.push(main[i]);
+        }
+        for (j = main.length / 2; j < main.length; j++) {
+            sub2.push(main[j]);
+        }
+        document.write(sub1 + "<br>");
+        document.write(sub2 + "<br>");
+
+
+
+        //Program to concatinate 
+
+        let h = [2, 4, 6, 8];
+        i = [1, 3, 5, 7]
+        j = h.concat(i)
+        document.write("<br>", j)
+
+        //Write a program to search an element in an array
+
+        a5 = [10, 20,30, 11, 1000];
+        search = 30;
+        for (i in a5) {
+            if (a5[i] == search) {
+                document.write("<br>The search element detected " + a5[i] + "<br>");
+            }
+        }
+        // Sort the array in ascending & descending order
+
+        a6 = [8, 2, 6, 7, 3, 1];
+        let temp = 0;
+        x = a6.length;
+        for (i = 0; i < x - 1; i++) {
+            for (j = 0; j < x - i - 1; j++) {
+                if (a6[j] > a6[j + 1]) {
+                    temp = a6[j];
+                    a6[j] = a6[j + 1];
+                    a6[j + 1] = temp;
+                }
+            }
+        }
+        document.write("The ascending order of sorted array :", a6 + "<br>");
+        let a7 = [];
+        for (k = x - 1; k >= 0; k--) {
+            a7.push(a6[k]);
+        }
+        document.write("The descending order of sorted array :", a7 + "<br>");
+
+        //Program to print minimum and maximum element in the above array
+
+        a8 = [8, 2, 6, 7, 3, 1];
+        let temp1 = 0;
+        n = a8.length;
+        for (i = 0; i < n - 1; i++) {
+            for (j = 0; j < n - i - 1; j++) {
+                if (a8[j] > a8[j + 1]) {
+                    temp1 = a8[j];
+                    a8[j] = a8[j + 1];
+                    a8[j + 1] = temp1;
+                }
+            }
+        }
+        document.write("The minimum element of sorted array :", a8[0] + "<br>");
+        document.write("The maximum element of sorted array :", a8[n - 1] + "<br>");
+
+        // program to reverse a string
+
+        string="Language";
+        for(i=string.length-1;i>=0;i--)
+        {
+            document.write(string[i],);
+        }
+
+        //program to search a character in string
+
+        string1="Malayalam";
+        search="y"
+        for(y in string1)
+        {
+            if(string1[y]==search)
+            {
+                document.write("<br>The searched item "+string1[y]+" is present");
+            }
+            
+        }
+
+        //occurrence of 2 in this array
+
+        a9=[1,6,7,8,2,3,4,2,9,2,2];
+        count=0
+        search=2
+        for(i in a9)
+        {
+            if(a9[i]==search)
+            {
+                count+=1;
+            }
+
+            
+        }document.write("<br>The count of occurence of 2 in the array is "+count);
+
+        //union and intersection
+
+        a=[4,5,6,7,8];
+        b=[2,3,4,5,6];
+        int=[];
+        uni=[];
+        for(i=0;i<a.length;i++)
+        {
+            for(j=0;j<b.length;j++)
+            {
+                if(a[i]==b[j])
+                {
+                    int.push(a[i]);
+                }
+                
+            }
+        }document.write("<br>Intersection :"+int);
+
+
+        for(i=0;i<a.length;i++)
+        {
+            if(!uni.includes(a[i]))
+            {
+                uni.push(a[i]);
+            }
+
+        }
+        for(i=0;i<a.length;i++)
+        {
+            if(!uni.includes(b[i]))
+            {
+                uni.push(b[i]);
+            }
+            
+        }document.write("<br>union :",uni);
+
+        
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
